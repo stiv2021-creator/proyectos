@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de cliente</title>
+</head>
+
+<body>
+    <h1>Gestion de Clientes</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" required minlength="10">
+        <br> </br>
+        <label for="apellido">apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido" required minlength="10">
+        <br> </br>
+        <label for="Correo Electronico">Correo Electronico:</label>
+        <input type="text" id="Correo Electronico" name="Correo Electronico" placeholder="ingrese su correo" required
+            minlength="10">
+        <br> </br>
+        <label for="password">Contraseña:</label>
+        <input type="password">
+        <br> </br>
+        <fieldset>
+            <legend>GENERO</legend>
+            <input type="radio" id="formulario" name="genero" required value="femenino">
+
+            <label for="femenino">femenino</label>
+            <input type="radio" id="masculino" name="genero" required value="masculino">
+            <label for="masculino">masculino</label>
+        </fieldset>
+        <br> </br>
+        <label for="fechanacimiento">fecha de nacimiento:</label>
+        <input type="date" id="fechanacimiento" name="fechanacimiento" required>
+        <br> </br>
+        <label for="telefono">Telefono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        <br> </br>
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <br> </br>
+        <h2>Selecciona un regimen</h2>
+        <label for="regimen">regimen:</label>
+        <select name="regimen" id="regimen">
+            <option value="seleccione una opcion">seleccione una opcion</option>
+            <option value="regimen 1">regimen 1</option>
+            <option value="regimen 2">regimen 2</option>
+            <option value="regimen 3">regimen 3</option>
+        </select >
+        <br> </br>
+        <fieldset>
+            <legend>INTERESES</legend>
+             <input type="checkbox" name="intereses" id="intereses">
+            <label for="Tecnologia">Tecnologia</label>
+            <input type="checkbox" name="intereses" id="intereses">
+            <label for="Viajes">Viajes</label>
+            <input type="checkbox" name="intereses" id="intereses">
+            <label for="Deportes">Deportes</label>
+        </fieldset>
+        <br> </br>
+        <label for="comentarios">comentarios:</label><br>
+        <textarea name="comentarios" id="comentarios" rows="10" cols="50"></textarea>
+        <br> </br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpiar">
+        
+    </form>
+
+</body>
+
+</html>
