@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/formulario.css"> <!-- tu CSS global -->
+</head>
+<body>
+
+  <form action="#" method="post">
+    <h1>Cuentanos tu Historia</h1>
+
+    <!-- Nombre -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3">
+
+    <!-- Apellido -->
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required minlength="3">
+
+    <!-- Correo -->
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+    <!-- de donde viene -->
+    <fieldset>
+      <legend>Esta HIstoria es</legend>
+      <label><input type="radio" name="genero" value="femenino" required> Personal </label>
+      <label><input type="radio" name="genero" value="masculino"> Tercero</label>
+    </fieldset>
+
+
+    <!-- privacidad -->
+    <label for="privacidad">Quieres que sea:</label>
+    <select name="privacidad" id="privacidad" required>
+      <option value="">Seleccione una opción</option>
+      <option value="regimen1">Publica</option>
+      <option value="regimen2">Anonima</option>
+ 
+    </select>
+
+    <!-- Tipo de historia -->
+    <fieldset>
+      <legend>Tipo de Historia</legend>
+      <label><input type="checkbox" name="Tipo" value="Misterio"> Misterio</label>
+      <label><input type="checkbox" name="Tipo" value="paranormal"> Paranormal</label>
+      <label><input type="checkbox" name="Tipo" value="leyenda"> Leyenda</label>
+      <label><input type="checkbox" name="Tipo" value="mito"> Mito</label>
+    </fieldset>
+
+    <!-- Historia -->
+    <label for="comentarios">Historia:</label>
+    <textarea name="comentarios" id="comentarios" rows="5" placeholder="Escribe aquí tu Historia..."></textarea>
+
+    <!-- Botones -->
+    <div class="buttons">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </div>
+  </form>
+
+</body>
+</html>
